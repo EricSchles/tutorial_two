@@ -36,13 +36,30 @@ The boolean operators are:
 >= - greater than or equal
 == - equal
 
-Notice that print(iAmEric("eric")); evaluates to false but should evaluate to true.  So this is a logical flaw.  We'll address this 
-in the next tutorial. 
+Notice that print(iAmEric("eric")); evaluates to false but should evaluate to true.  So this is a logical flaw.  So we write a 
+second function to handle this. 
+
+Unfortunately the Java == operator is really really poorly written and can't tell that "ERIC" and "eric".toUpperCase() should be the same.
+I'm not sure exactly why this is happening in this instance, since toUpperCase is a string.  But in general it's because the references
+are different.  I'm guessing that because toUpperCase() returns a string from a different context it's saying, this string isn't a string
+literal!  Which means they can't be the same.  Fortunately Java comes with a .equals method for everything primitive type, which isn't 
+dumb.
+
 */
+
 class lesson_one<T>{
 
 	public static Boolean iAmEric(String name){
 		if(name == "Eric"){
+			return true;
+		} else{
+			return false;
+		}
+	}
+
+	public static Boolean iAmEricTwo(String name){
+		name = name.toUpperCase();
+		if( name.equals("ERIC")){
 			return true;
 		} else{
 			return false;
@@ -56,5 +73,9 @@ class lesson_one<T>{
 		print(iAmEric("Eric"));
 		print(iAmEric("Bob"));
 		print(iAmEric("eric")); //this should pass but doesn't!
+
+		print(iAmEricTwo("Eric"));
+		print(iAmEricTwo("Bob"));
+		print(iAmEricTwo("eric"));
 	}
 }
