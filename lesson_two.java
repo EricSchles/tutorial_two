@@ -25,6 +25,13 @@ util.Scanner
 Java does naturally have all the libraries one could reference available to it, however importing changes the way in which the libraries are called.
 
 So instead of having to type java.util.Scanner we can just type Scanner (assuming we had an import java.util.Scanner statement).  
+
+The last thing to note is the type conversion happening here:
+
+Specifically: Integer.toString() for the x value.
+
+All the built in types have toString methods which are used to convert other types to strings.  Typically this is done so that non-string output and string output 
+can be printed on one line.  There are a number of other type conversion tools Java exposes.  We'll look at some of theses in next exercise.
 */
 class lesson_two<T>{
 	
