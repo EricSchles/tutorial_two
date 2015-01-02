@@ -26,6 +26,9 @@ generalization with modularity, don't rewrite too much and don't rewrite too lit
 I know this may sound vague but with time it will become clear how to actually do this.  And its also important to keep in mind, this is
 a matter of taste and will differ between different people.
 
+Another thing to notice is the use of super in the constructor.  When you don't call any methods, super will call the constructor of
+the parent class.  Also known as the super class.  This is the class that is inherited from.
+
 */
 class A{
 	public Integer first;
