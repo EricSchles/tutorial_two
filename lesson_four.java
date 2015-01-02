@@ -64,11 +64,9 @@ public class lesson_four{
 
 		a.print_vals();
 		b.print_vals();
-		try{
-			A.print(b.a_first);
-			A.print(b.a_second);
-		}catch(Exception e){
-			b.print("Failed to print");
-		}
+		
+		//B.print(b.a_first); - doesn't work!
+		//B.print(b.a_second); - doesn't work!
+	
 	}
 }
