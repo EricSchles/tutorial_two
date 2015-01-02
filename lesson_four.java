@@ -11,7 +11,10 @@ method overriding.  Other than that, this lesson should be completely clear.
 So let's start with inheritance:
 
 Inheritance is the ability for one class to inherit the methods and fields (variables) from another class.  In this example, we
-use a very simple example: two classes A and B, where B inherits from A.  This means that anything public
+use a very simple example: two classes A and B, where B inherits from A.  This means that anything public to A will be accessible 
+in B.  
+
+
 
 */
 class A{
@@ -33,6 +36,10 @@ class A{
 
 	public void print_vals(){
 		print(this.first.toString() + " " + this.second);
+	}
+
+	public int get_first(){
+		return this.first;
 	}
 }
 
@@ -64,7 +71,7 @@ public class lesson_four{
 
 		a.print_vals();
 		b.print_vals();
-		
+		b.print(b.get_first());
 		//B.print(b.a_first); - doesn't work!
 		//B.print(b.a_second); - doesn't work!
 	
