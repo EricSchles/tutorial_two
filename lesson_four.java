@@ -1,4 +1,19 @@
+/*
+How to compile:
+javac lesson_four.java
+java lesson_four
 
+Explanation:
+
+In this lesson we will see some of the real power of java.  The first big thing here is inheritance.  The second big thing is
+method overriding.  Other than that, this lesson should be completely clear.
+
+So let's start with inheritance:
+
+Inheritance is the ability for one class to inherit the methods and fields (variables) from another class.  In this example, we
+use a very simple example: two classes A and B, where B inherits from A.  This means that anything public
+
+*/
 class A{
 	public Integer first;
 	public String second;
@@ -8,6 +23,8 @@ class A{
 	A(int first, String second){
 		this.first = first;
 		this.second = second;
+		this.a_first = 27;
+		this.a_second = "this shouldn't be available.";
 	}
 
 	public static <T> void print(T input){
@@ -47,5 +64,11 @@ public class lesson_four{
 
 		a.print_vals();
 		b.print_vals();
+		try{
+			A.print(b.a_first);
+			A.print(b.a_second);
+		}catch(Exception e){
+			b.print("Failed to print");
+		}
 	}
 }
