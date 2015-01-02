@@ -14,7 +14,17 @@ Inheritance is the ability for one class to inherit the methods and fields (vari
 use a very simple example: two classes A and B, where B inherits from A.  This means that anything public to A will be accessible 
 in B.  
 
+For instance, look at the get_first method defined in A.  I use in main with the b object.  Although I never defined it in B!  
+Also, take a look at the print_vals methods in A and B.  Notice the use of super.print_vals which calls A's print_vals method.
+Thus we can add to the origin method in B or just make use of the methods of A in B.  This allows us to write very generalized code.
 
+We can start with simple ideas and let the number of classes expand and change as we need to add functionality.  It's important to keep
+in mind that you shouldn't overuse inheritance.  If you're classes are too heavily object oriented it's possible you could be calling a
+method you defined in some class years and years ago and forgot how it works.  For this reason it's important to balance object oriented
+generalization with modularity, don't rewrite too much and don't rewrite too little. 
+
+I know this may sound vague but with time it will become clear how to actually do this.  And its also important to keep in mind, this is
+a matter of taste and will differ between different people.
 
 */
 class A{
