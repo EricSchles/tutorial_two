@@ -26,7 +26,7 @@ class implementar implements interfacing {
 	}
 	
 	//wraps System.out.println
-	public static void print(Object input){
+	public <T> void print(T input){
 		System.out.println(input);
 	}
 	
