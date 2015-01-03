@@ -39,6 +39,12 @@ class implementar implements interfacing {
 
 class bunny{
 
+	private int age;
+	private String gender;
+	bunny(int age,String gender){
+		this.age = age;
+		this.gender = gender;
+	}
 }
 public class lesson_five{
 
