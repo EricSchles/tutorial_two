@@ -3,7 +3,7 @@ public interface interfacing{
 	//prints hello + x
 	public <T> void print(T input);
 	//wraps System.out.println
-	public Boolean rabbies(Object obj);
+	public Boolean has_rabbies(Object obj);
 	//check if obj has .rabbies property.  if set to true, return true
 	//else return false.
 	

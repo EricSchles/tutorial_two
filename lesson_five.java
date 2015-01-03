@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /*
 how to compile:
 javac lesson_five.java interfacing.java
@@ -30,7 +32,7 @@ class implementar implements interfacing {
 		System.out.println(input);
 	}
 	
-	public Boolean rabbies(Object obj){
+	public Boolean has_rabbies(Object obj){
 		return true;
 	}
 	//check if obj has .rabbies property.  if set to true, return true
@@ -41,10 +43,15 @@ class bunny{
 
 	private int age;
 	private String gender;
+	private Boolean rabbies;
+
 	bunny(int age,String gender){
 		this.age = age;
 		this.gender = gender;
+		this.rabbies = 
 	}
+
+
 }
 public class lesson_five{
 
