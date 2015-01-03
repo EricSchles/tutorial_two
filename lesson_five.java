@@ -83,6 +83,6 @@ public class lesson_five{
 		bunny rabbit = new bunny(2,"male");
 		x.print("Hello");
 		x.hello(" Eric");
-		x.has_rabbies(rabbit);
+		x.print(x.has_rabbies(rabbit));
 	}
 }
