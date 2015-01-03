@@ -72,10 +72,11 @@ class bunny{
 }
 public class lesson_five{
 
-	implementar x = new implementar();
-	
-	x.print("Hello");
-	x.hello(" Eric");
-	//x.rabbies();
-	
+	public static void main(String[] args){
+		implementar x = new implementar();
+		
+		x.print("Hello");
+		x.hello(" Eric");
+		//x.rabbies();
+	}
 }
