@@ -48,12 +48,16 @@ class bunny{
 	bunny(int age,String gender){
 		this.age = age;
 		this.gender = gender;
-		this.rabbies = 
+		this.rabbies = give_rabbies();
 	}
 
 	private Boolean give_rabbies(){
 		Random rand_gen= new Random();
 		int rand_num = rand_gen.nextInt(9999999);
+		if(rand_num%7 == 3){
+			return true;
+		}
+		return false;
 	}
 }
 public class lesson_five{
