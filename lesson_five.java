@@ -32,19 +32,21 @@ class implementar implements interfacing {
 		System.out.println(input);
 	}
 	
-	public Boolean has_rabbies(Object obj){
-		return obj.;
+	public Boolean has_rabbies(Animal obj){
+		return obj.has_rabbies();
 	}
 	//check if obj has .rabbies property.  if set to true, return true
 	//else return false.
 }
 
-class bunny{
-
+class Animal{
 	private int age;
 	private String gender;
-	private Boolean rabbies;
+	private Boolean rabbies;	
+}
+class bunny extends Animal{
 
+	
 	bunny(int age,String gender){
 		this.age = age;
 		this.gender = gender;

@@ -3,7 +3,7 @@ public interface interfacing{
 	//prints hello + x
 	public <T> void print(T input);
 	//wraps System.out.println
-	public Boolean has_rabbies(Object obj);
+	public Boolean has_rabbies(Animal obj);
 	//check if obj has_rabbies method.  if it does call said method
 	
 	
