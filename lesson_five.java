@@ -31,7 +31,7 @@ class implementar implements interfacing {
 	}
 	
 	public Boolean rabbies(Object obj){
-
+		return true;
 	}
 	//check if obj has .rabbies property.  if set to true, return true
 	//else return false.
