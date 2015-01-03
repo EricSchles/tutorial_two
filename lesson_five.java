@@ -74,9 +74,9 @@ public class lesson_five{
 
 	public static void main(String[] args){
 		implementar x = new implementar();
-		
+		bunny rabbit = new bunny(2,"male");
 		x.print("Hello");
 		x.hello(" Eric");
-		//x.rabbies();
+		x.rabbies(rabbit);
 	}
 }
