@@ -37,8 +37,10 @@ class implementar implements interfacing {
 	//else return false.
 }
 
+class bunny{
 
-class lesson_five{
+}
+public class lesson_five{
 
 	implementar x = new implementar();
 	
