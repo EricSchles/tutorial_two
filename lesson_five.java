@@ -25,10 +25,11 @@ class implementar implements interfacing {
 		print("Hello"+x);
 	}
 	
+	//wraps System.out.println
 	public static <T> void print(T input){
 		System.out.println(input);
 	}
-	//wraps System.out.println
+	
 	Boolean rabbies(Object obj);
 	//check if obj has .rabbies property.  if set to true, return true
 	//else return false.
