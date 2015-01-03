@@ -36,7 +36,14 @@ class implementar implements interfacing {
 	//check if obj has .rabbies property.  if set to true, return true
 	//else return false.
 }
+
+
 class lesson_five{
 
+	implementar x = new implementar();
+	
+	x.print("Hello");
+	x.hello(" Eric");
+	//x.rabbies();
 	
 }
