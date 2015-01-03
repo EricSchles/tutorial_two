@@ -20,9 +20,12 @@ really tend to happen.
 
 */
 class implementar implements interfacing {
-	void hello(String x);
 	//prints hello + x
-	void print(input);
+	void hello(String x){
+		print("Hello"+x);
+	}
+	
+	public static <T> void print(T input);
 	//wraps System.out.println
 	Boolean rabbies(Object obj);
 	//check if obj has .rabbies property.  if set to true, return true
