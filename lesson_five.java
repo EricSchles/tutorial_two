@@ -54,7 +54,7 @@ class bunny{
 	private Boolean give_rabbies(){
 		Random rand_gen= new Random();
 		int rand_num = rand_gen.nextInt(9999999);
-		if(age > 3 and age < 7){
+		if(age > 3 && age < 7){
 			if(rand_num%7 == 3){
 				return true;
 			}
