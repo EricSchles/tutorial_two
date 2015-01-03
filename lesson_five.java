@@ -33,7 +33,7 @@ class implementar implements interfacing {
 	}
 	
 	public Boolean has_rabbies(Object obj){
-		return true;
+		return obj.;
 	}
 	//check if obj has .rabbies property.  if set to true, return true
 	//else return false.
@@ -68,6 +68,10 @@ class bunny{
 			}
 		}
 		return false;
+	}
+
+	public Boolean has_rabbies(){
+		return this.rabbies;
 	}
 }
 public class lesson_five{

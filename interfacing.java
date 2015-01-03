@@ -4,7 +4,7 @@ public interface interfacing{
 	public <T> void print(T input);
 	//wraps System.out.println
 	public Boolean has_rabbies(Object obj);
-	//check if obj has .rabbies property.  if set to true, return true
-	//else return false.
+	//check if obj has_rabbies method.  if it does call said method
+	
 	
 }
