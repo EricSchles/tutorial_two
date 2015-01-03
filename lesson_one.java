@@ -40,10 +40,9 @@ Notice that print(iAmEric("eric")); evaluates to false but should evaluate to tr
 second function to handle this. 
 
 Unfortunately the Java == operator is really really poorly written and can't tell that "ERIC" and "eric".toUpperCase() should be the same.
-I'm not sure exactly why this is happening in this instance, since toUpperCase is a string.  But in general it's because the references
+I'm not sure exactly why this is happening in this instance, since toUpperCase returns a string.  But in general it's because the references
 are different.  I'm guessing that because toUpperCase() returns a string from a different context it's saying, this string isn't a string
-literal!  Which means they can't be the same.  Fortunately Java comes with a .equals method for everything primitive type, which isn't 
-dumb.
+literal!  Which means they can't be the same.  Fortunately Java comes with a .equals method, which isn't dumb.
 
 */
 
