@@ -20,6 +20,15 @@ This isn't particularly useful when you are working by yourself, however when yo
 large scale projects, this is extremely useful.  Of course we could all just be good communicators, but that doesn't
 really tend to happen.
 
+As you can see here I write my method signatures in interfacing.java and then give the methods bodies here in lesson_five.java.
+There are a few things I'm confused on so I won't be able to speak to them.  
+
+1) why can't I use Object and then check if my method exists for has_rabbies?
+2) why can't I use type Animal, since bunny extends Animal shouldn't this work?
+
+I won't be able to speak intelligently about intefacing until I understand this, and unfortunately I don't.
+
+So, for an explanation I suggest looking elsewhere, for now.
 */
 class implementar implements interfacing {
 	//prints hello + x
