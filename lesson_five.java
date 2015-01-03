@@ -32,7 +32,7 @@ class implementar implements interfacing {
 		System.out.println(input);
 	}
 	
-	public Boolean has_rabbies(Animal obj){
+	public Boolean has_rabbies(bunny obj){
 		return obj.has_rabbies();
 	}
 	//check if obj has .rabbies property.  if set to true, return true
@@ -40,9 +40,9 @@ class implementar implements interfacing {
 }
 
 class Animal{
-	private int age;
-	private String gender;
-	private Boolean rabbies;	
+	public int age;
+	public String gender;
+	public Boolean rabbies;	
 }
 class bunny extends Animal{
 
@@ -83,6 +83,6 @@ public class lesson_five{
 		bunny rabbit = new bunny(2,"male");
 		x.print("Hello");
 		x.hello(" Eric");
-		x.rabbies(rabbit);
+		x.has_rabbies(rabbit);
 	}
 }
