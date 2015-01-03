@@ -21,7 +21,7 @@ really tend to happen.
 */
 class implementar implements interfacing {
 	//prints hello + x
-	void hello(String x){
+	public void hello(String x){
 		print("Hello"+x);
 	}
 	
